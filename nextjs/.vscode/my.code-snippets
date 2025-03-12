@@ -1,0 +1,103 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	"console log": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "log",
+		"body": [
+			"console.log('🚀 $1', $1$2)$0"
+		],
+		"description": "Log output to console"
+	},
+	"console error": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "err",
+		"body": [
+			"console.error('💥 $1', $1$2)$0"
+		],
+		"description": "Error output to console"
+	},
+	"console wram": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "wram",
+		"body": [
+			"console.wram('🚨 $1', $1$2)$0"
+		],
+		"description": "Wram output to console"
+	},
+	"Next.js app page.tsx": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "pg",
+		"body": [
+			"import React from 'react'",
+			"",
+			"export default function ${1:Name}Page() {",
+			"",
+			"\treturn (",
+			"\t\t<>",
+			"\t\t\t$0",
+			"\t\t</>",
+			"\t)",
+			"}",
+		],
+		"description": "page.tsx | page.ts"
+	},
+	"function component": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "fc",
+		"body": [
+			"import React from 'react'",
+			"",
+			"export function ${1:Comp}() {",
+			"",
+			"\treturn (",
+			"\t\t<>",
+			"\t\t\t$0",
+			"\t\t</>",
+			"\t)",
+			"}",
+		],
+		"description": "function component"
+	},
+	"memo function component": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "mfc",
+		"body": [
+			"import React from 'react'",
+			"",
+			"export const ${1:Comp} = React.memo(() => {",
+			"",
+			"\treturn (",
+			"\t\t<>",
+			"\t\t\t$0",
+			"\t\t</>",
+			"\t)",
+			"})",
+			"${1:Comp}.displayName = '${1:Comp}'"
+		],
+		"description": "memo function component"
+	},
+	"forwardRef function component": {
+		"scope": "typescript,typescriptreact",
+		"prefix": "ffc",
+		"body": [
+			"import React from 'react'",
+			"",
+			"export const ${1:Comp} = React.forwardRef<${2:HTMLElement}, ${3:${1:Comp}Props}>((props, ref) => {",
+			"",
+			"\treturn (",
+			"\t\t<>",
+			"\t\t\t$0",
+			"\t\t</>",
+			"\t)",
+			"})",
+			"${1:Comp}.displayName = '${1:Comp}'"
+		],
+		"description": "memo function component"
+	}
+}

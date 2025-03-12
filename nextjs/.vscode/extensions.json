@@ -6,6 +6,11 @@
     "naumovs.color-highlight",
     "christian-kohler.path-intellisense",
     "bradlc.vscode-tailwindcss",
-    "ms-vscode.vscode-typescript-next"
+    "ms-vscode.vscode-typescript-next",
+
+    "meganrogge.template-string-converter",
+    "MaoSantaella.night-wolf",
+    "VisualStudioExptTeam.intellicode-api-usage-examples",
+    "formulahendry.auto-rename-tag"
   ]
 }
