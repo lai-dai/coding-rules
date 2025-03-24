@@ -18,3 +18,23 @@ This is a `Project Name` project bootstrapped with `create-t3-app` and customize
 ## How do I deploy this?
 
 Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+
+```tsx
+const [isSticky, setIsSticky] = React.useState(false)
+
+React.useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsSticky(true)
+    } else {
+      setIsSticky(false)
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll)
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll)
+  }
+}, [])
+```
